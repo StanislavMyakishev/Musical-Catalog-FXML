@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="artistSearchAnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controllers.ArtistSearchController">
+   <children>
+      <VBox fx:id="artistSearchVBox" prefHeight="600.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="artistSearchTextField" prefHeight="100.0" prefWidth="400.0" promptText="Artist Name...">
+               <font>
+                  <Font name="Times New Roman" size="35.0" />
+               </font>
+            </TextField>
+            <Button fx:id="artistSearchSearchButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#onClickSearchButton" prefHeight="60.0" prefWidth="400.0" text="Search">
+               <font>
+                  <Font name="Times New Roman" size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="artistSearchBackButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#onClickBackButton" prefHeight="60.0" prefWidth="400.0" text="Back to menu">
+               <font>
+                  <Font name="Times New Roman" size="35.0" />
+               </font>
+            </Button>
+            <TableView fx:id="artistSearchTableView" prefHeight="380.0" prefWidth="200.0">
+              <columns>
+                  <TableColumn fx:id="artistSearchAlbumColumn" prefWidth="200.0" text="Album" />
+                  <TableColumn fx:id="artistSearchGenreColumn" prefWidth="200.0" text="Genre" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
